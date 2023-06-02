@@ -41,11 +41,6 @@ const animate = () => {
   let frameY = -spriteAnimations[playerState].loc[position].y
   ctx.drawImage(playerImage, frameX, frameY, spriteWidth, spriteHeight)
 
-  // if (gameFrame % staggerFrames === 0) {
-  //   if (frameX < 4 ) frameX++
-  //   else frameX = 0
-  // }
-
   gameFrame++
   requestAnimationFrame(animate)
 
